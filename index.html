@@ -5,10 +5,11 @@
 </head>
 <body>
 	<h1>Mucho Cerveza</h1>
-	<form>
+	<div id="idea-array"></div>
+	<form name="add-idea">
 		<h2>Add Idea</h2>
-		<input type="textbox" name="add-idea" placeholder="Add your idea" onclick="fuck()">
-		<input id="add-idea-submit" type="submit" value="Submit">
+		<input id="add-idea" type="textbox" placeholder="Add your idea" onclick="fuck()">
+		<input id="add-idea-submit" type="submit" value="Submit" onclick="submitArray(event)">  <!-- Make this onsubmit later -->
 	</form>
 </body>
 </html>
