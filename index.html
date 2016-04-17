@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Project Cerveza</title>
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="cerveza.js"></script>
 </head>
 <body>
@@ -8,8 +9,9 @@
 	<div id="idea-array"></div>
 	<form name="add-idea">
 		<h2>Add Idea</h2>
-		<input id="add-idea" type="textbox" placeholder="Add your idea" onclick="fuck()">
+		<input id="add-idea" type="textbox" placeholder="Add your idea" onclick="removePlaceholder()">
 		<input id="add-idea-submit" type="submit" value="Submit" onclick="submitArray(event)">  <!-- Make this onsubmit later -->
 	</form>
+	<input id="drink" type="submit" value="Drink" onclick="createCSS(event)">
 </body>
 </html>
