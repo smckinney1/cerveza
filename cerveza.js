@@ -62,3 +62,63 @@ function submitArray(e) {
 	$('#add-idea').val('');
 }
 
+var flashBlue = function () {
+	setTimeout (function () {
+		document.body.style.backgroundColor = "#009CDB";
+		console.log("blue");
+		flashWhite();
+	}, 1000);
+}
+
+var flashWhite = function () {
+	setTimeout (function () {
+		document.body.style.backgroundColor = "#fff";
+		console.log("white");
+		flashBlue();
+	}, 1000);
+}
+
+//JavaScript to make background flash colors when "Drink" button is clicked
+function createCSS (e) {
+	event.preventDefault();
+	flashBlue();
+	/*setTimeout (function () {
+		//console.log("running timeout function");
+		document.body.style.backgroundColor = "#009CDB";
+		setTimeout (
+
+			function () {
+				document.body.style.backgroundColor = "#fff";
+				setTimeout (
+					function () {
+						document.body.style.backgroundColor = "#009CDB";
+						setTimeout (
+							function () {
+								document.body.style.backgroundColor = "#fff";
+							}, 300);
+
+					}, 300);
+
+			}, 300);
+
+	}, 300);*/
+}
+
+
+
+
+/*var i;
+	function changeColors () {
+		i = 1;
+		setInterval(change, 500);
+	}
+	function change () {
+		if (i === 1) {
+			color="#009CDB";
+			i = 2;
+		} else {
+			color="#fff";
+			i = 1;
+		}
+		document.body.style.background = color;
+	}*/
