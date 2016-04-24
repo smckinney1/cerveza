@@ -6,7 +6,16 @@
 //jQuery
 $(document).ready(function() {
 	$('#add-idea').focus();
+	initializeButtons();
 })
+
+function initializeButtons () {
+	var submitIdea = document.getElementById('add-idea-submit');
+	var drink = document.getElementById('drink');
+	submitIdea.addEventListener('click', submitArray);	//will make this on submit later
+	drink.addEventListener('click', createCSS);
+	drink.addEventListener('click', playAudio);
+}
 
 var ideaArray = [];
 
@@ -80,7 +89,6 @@ var flashWhite = function () {
 
 //JavaScript to make background flash colors when "Drink" button is clicked
 function createCSS (e) {
-	event.preventDefault();
 	flashBlue();
 	/*setTimeout (function () {
 		//console.log("running timeout function");
@@ -122,3 +130,8 @@ function createCSS (e) {
 		}
 		document.body.style.background = color;
 	}*/
+
+function playAudio() {
+	var audio = document.getElementById("audio");
+	audio.play();
+}
