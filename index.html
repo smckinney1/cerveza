@@ -2,17 +2,25 @@
 <head>
 	<title>Project Cerveza</title>
 	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
+	<link href="main.css" rel="stylesheet">
 	<script type="text/javascript" src="cerveza.js"></script>
 </head>
 <body>
-	<h1>Mucho Cerveza</h1>
-	<div id="idea-array"></div>
-	<form name="add-idea" class="idea-form">
-		<h2>Add Idea</h2>
-		<input id="add-idea" type="textbox" placeholder="Add your idea">
-		<input id="add-idea-submit" type="submit" value="Submit">
-		<input id="drink" type="button" value="Drink">
+	<div class="container-fluid">
+		<div class="inset-div">
+			<span class="inset-type">¡MUCHO CERVEZA!</span>
+		</div>
+		<ul class="idea-array" id="idea-array"></ul>
+		<form name="add-idea" class="idea-form">
+			<h2>Ideas for the drinking game, ahora!</h2>
+			<input id="add-idea" type="textbox" placeholder="Add your idea">
+			<input id="add-idea-submit" class="btn btn-warning" type="submit" value="Submit" name="submit-text">
+		</form>
+		<button id="drink" class="btn btn-info"><i class="fa fa-beer" aria-hidden="true"></i><span id="drink-text">Drink!</span></button>
 		<audio id="audio" src="InnocentAudio.mp3"></audio>
-	</form>
+	</div>
 </body>
 </html>

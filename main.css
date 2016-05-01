@@ -1,0 +1,63 @@
+.inset-div {
+	background-image: url("img/Melamine-wood-005.png");
+	background-color: #A0643E;
+	border-bottom: 2px solid #603c25;
+	height: 30%;
+	position: relative;
+}
+
+/*****************************************************************
+
+(1) FIGURE OUT WHY THE ALGINMENT WORKS LIKE IT DOES IN .INSET-TYPE
+(2) MAKE .INSET-TYPE MORE RESPONSIVE
+
+******************************************************************/
+
+.inset-type {
+	/*width: 100%;*/
+	color: #a0643e;
+	font-family: 'Sancreek', sans-serif;
+	font-size: 82;
+	text-align: center;
+	text-shadow: rgba(0,0,0,0.5) -2px 0, rgba(0,0,0,0.3) 0 -2px, rgba(255,255,255,0.5) 0 2px, rgba(0,0,0,0.3) -1px -3px;
+	margin: auto;
+	/*text-align: center;
+	vertical-align: center;*/
+	position: absolute;
+	top: 25%;
+	left: 25%;
+}
+
+ul.well {
+	background: rgba(241,220,188,1);
+	background: -moz-linear-gradient(top, rgba(241,220,188,1) 0%, rgba(225,179,122,1) 99%, rgba(230,206,168,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,220,188,1)), color-stop(99%, rgba(225,179,122,1)), color-stop(100%, rgba(230,206,168,1)));
+	background: -webkit-linear-gradient(top, rgba(241,220,188,1) 0%, rgba(225,179,122,1) 99%, rgba(230,206,168,1) 100%);
+	background: -o-linear-gradient(top, rgba(241,220,188,1) 0%, rgba(225,179,122,1) 99%, rgba(230,206,168,1) 100%);
+	background: -ms-linear-gradient(top, rgba(241,220,188,1) 0%, rgba(225,179,122,1) 99%, rgba(230,206,168,1) 100%);
+	background: linear-gradient(to bottom, rgba(241,220,188,1) 0%, rgba(225,179,122,1) 99%, rgba(230,206,168,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1dcbc', endColorstr='#e6cea8', GradientType=0 );
+}
+
+/*****************************************************************
+
+Below made the "submit" button brown and needs more added if I
+decide to do that. Not sure if I like the look of brown.
+
+******************************************************************/
+
+/*.custom-btn {
+	color: #fff;
+	background-color: #603c25;
+	border-color: #563621;
+}
+
+.custom-btn:hover {
+  color: #fff;
+  background-color: #4c301d;
+  border-color: #432a19;
+}
+*/
+#drink-text {
+	padding-left: 4px;
+}

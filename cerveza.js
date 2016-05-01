@@ -67,7 +67,8 @@ function submitArray(e) {
 	e.preventDefault();
 	var submission = $('#add-idea').val();
 	ideaArray.push(submission);
-	$('#idea-array').append('<div>' + submission + '</div>');
+	$('.idea-array').addClass('well well-sm');
+	$('#idea-array').append('<li class="list-group-item">' + submission + '</li>');
 	$('#add-idea').val('');
 }
 
