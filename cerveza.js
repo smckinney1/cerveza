@@ -19,12 +19,15 @@ function initializeButtons () {
 
 var ideaArray = [];
 
-var voteIcons = 
-	'<button type="button" class="btn btn-default btn-xs float-right">' +
-		'<span class="glyphicon glyphicon-menu-up"></span>' +
-	'</button>' +
+var voteCount = 0;		//use this in the submitArray function later
+
+var voteIcons =
+	'<span class="vote float-right">' + voteCount + '</span>' +
 	'<button type="button" class="btn btn-default btn-xs float-right">' +
 		'<span class="glyphicon glyphicon-menu-down"></span>' +
+	'</button>' +
+	'<button type="button" class="btn btn-default btn-xs float-right">' +
+		'<span class="glyphicon glyphicon-menu-up"></span>' +
 	'</button>'
 
 
@@ -75,7 +78,6 @@ var voteIcons =
 function submitArray(e) {
 	e.preventDefault();
 	var submission = $('#add-idea').val();
-	var voteCount = 0;
 	ideaArray.push({
 		value: submission,
 		votes: voteCount
@@ -86,7 +88,10 @@ function submitArray(e) {
 	console.log(ideaArray);
 
 	$('.glyphicon-menu-up').click(function(ev) {
-		console.log(ev.currentTarget);
+		voteCount++;
+		console.log(voteCount);
+		debugger;
+		$('.vote').text(voteCount);
 	});
 
 	$('#add-idea').val('');
