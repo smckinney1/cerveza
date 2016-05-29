@@ -19,6 +19,15 @@ function initializeButtons () {
 
 var ideaArray = [];
 
+var voteIcons = 
+	'<button type="button" class="btn btn-default btn-xs float-right">' +
+		'<span class="glyphicon glyphicon-menu-up"></span>' +
+	'</button>' +
+	'<button type="button" class="btn btn-default btn-xs float-right">' +
+		'<span class="glyphicon glyphicon-menu-down"></span>' +
+	'</button>'
+
+
 //JavaScript
 /*function fuck() {
 	alert("FUCK YOU!!!");
@@ -66,11 +75,30 @@ var ideaArray = [];
 function submitArray(e) {
 	e.preventDefault();
 	var submission = $('#add-idea').val();
-	ideaArray.push(submission);
+	var voteCount = 0;
+	ideaArray.push({
+		value: submission,
+		votes: voteCount
+	});
 	$('.idea-array').addClass('well well-sm');
-	$('#idea-array').append('<li class="list-group-item">' + submission + '</li>');
+
+	$('#idea-array').append('<li class="list-group-item">' + submission + voteIcons + ' ' + voteCount + '</li>');
+	console.log(ideaArray);
+
+	$('.glyphicon-menu-up').click(function(ev) {
+		console.log(ev.currentTarget);
+	});
+
 	$('#add-idea').val('');
 }
+
+/*var vote = 0;
+when click up: vote +=1
+--move li up 1 spot in the list
+when click down: vote -=1
+--move li 1 spot down in the list*/
+
+
 
 var flashBlue = function () {
 	setTimeout (function () {

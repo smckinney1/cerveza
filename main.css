@@ -1,8 +1,12 @@
+.wrapper {
+	text-align: center;
+}
+
 .inset-div {
 	background-image: url("img/Melamine-wood-005.png");
 	background-color: #A0643E;
 	border-bottom: 2px solid #603c25;
-	height: 30%;
+	height: 20%;
 	position: relative;
 }
 
@@ -17,15 +21,14 @@
 	/*width: 100%;*/
 	color: #a0643e;
 	font-family: 'Sancreek', sans-serif;
-	font-size: 82;
-	text-align: center;
+	font-size: 82px;
 	text-shadow: rgba(0,0,0,0.5) -2px 0, rgba(0,0,0,0.3) 0 -2px, rgba(255,255,255,0.5) 0 2px, rgba(0,0,0,0.3) -1px -3px;
 	margin: auto;
 	/*text-align: center;
 	vertical-align: center;*/
-	position: absolute;
+	/*position: absolute;
 	top: 25%;
-	left: 25%;
+	left: 25%;*/
 }
 
 ul.well {
@@ -58,6 +61,20 @@ decide to do that. Not sure if I like the look of brown.
   border-color: #432a19;
 }
 */
+
+.btn-circle.btn-xl {
+  width: 150px;
+  height: 150px;
+  padding: 10px 16px;
+  font-size: 42px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+
+.float-right {
+	float: right;
+}
+
 #drink-text {
 	padding-left: 4px;
 }

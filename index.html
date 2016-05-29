@@ -1,26 +1,44 @@
-<html>
-<head>
-	<title>Project Cerveza</title>
-	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
-	<link href="main.css" rel="stylesheet">
-	<script type="text/javascript" src="cerveza.js"></script>
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="inset-div">
-			<span class="inset-type">¡MUCHO CERVEZA!</span>
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+	<head>
+		<title>Project Cerveza</title>
+		<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
+		<link href="main.css" rel="stylesheet">
+		<script type="text/javascript" src="cerveza.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row inset-div hidden-sm hidden-xs">
+				<p class="inset-type text-center">¡MUCHO CERVEZA!</p>
+			</div>
+
+			<div class="row">
+				<ul class="idea-array col-md-8" id="idea-array"></ul>
+
+				<div class="col-md-3 col-md-offset-1">
+
+					<form name="add-idea" class="idea-form">
+						<div class="form-group">
+								<h2>Ideas</h2>
+	<!-- 							How to make the below form control required to submit and still prevent default behavior of "Submit"??? -->
+								<input type="textbox" required="required" class="form-control" id="add-idea" placeholder="Add your idea">
+							</div>
+							<input id="add-idea-submit" class="btn btn-warning" type="submit" value="Submit" name="submit-text">
+					</form>
+
+				<div class="wrapper">
+					<button id="drink" class="btn btn-info btn-circle btn-xl">
+						<i class="fa fa-beer" aria-hidden="true"></i>
+						<div id="drink-text">Drink!</div>
+					</button>
+				</div>
+				</div>
+			</div>
+			<audio id="audio" src="InnocentAudio.mp3"></audio>
 		</div>
-		<ul class="idea-array" id="idea-array"></ul>
-		<form name="add-idea" class="idea-form">
-			<h2>Ideas for the drinking game, ahora!</h2>
-			<input id="add-idea" type="textbox" placeholder="Add your idea">
-			<input id="add-idea-submit" class="btn btn-warning" type="submit" value="Submit" name="submit-text">
-		</form>
-		<button id="drink" class="btn btn-info"><i class="fa fa-beer" aria-hidden="true"></i><span id="drink-text">Drink!</span></button>
-		<audio id="audio" src="InnocentAudio.mp3"></audio>
-	</div>
-</body>
+	</body>
 </html>
